@@ -1,3 +1,6 @@
+imort os
+passwort = os.getenv('DB_PASSWORD')
+
 from mysql.connector import connection
 connection.MySQLConnection(host='localhost', user='sonarsource', password='passwort')  # Noncompliant
 
