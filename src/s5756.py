@@ -21,7 +21,7 @@ name = name
 
 import tempfile
 
-filename = tempfile.mktemp() # Noncompliant
+filename = tempfile.NamedTemporaryFile(delete=False)
 tmp_file = open(filename, "w+")
 
 
