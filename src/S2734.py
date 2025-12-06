@@ -4,8 +4,8 @@ class MyClass(object):
 
 
 
-if not a == 2:        # Noncompliant
-    b = not i < 10    # Noncompliant
+if a != 2:        # Noncompliant
+    b =  i >= 10    # Noncompliant
 
 
 
